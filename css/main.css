@@ -1,1 +1,186 @@
-/* Your stylesheet goes here */
+@import url(https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css);
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,300);
+@import url(https://fonts.googleapis.com/css?family=Lato:400,300,300italic);
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css);
+
+body {
+	font-family: 'Lato', "Helvetica Neue", Helvetica, sans-serif;
+	font-size: 16px;
+	font-weight: 300;
+	background-color: #E9EAEE
+}
+.navbar-fixed-top {
+	background-color: #181C22;
+}
+
+.navbar-fixed-top ul a{
+	padding:0.5em;
+	color:white;
+	text-decoration: none;
+	font-variant: small-caps;
+	font-size: 16px;
+}
+
+.navbar-fixed-top ul a:hover{
+	color:#D87E28;
+}
+
+.navbar-fixed-top ul svg:hover {
+	fill:#D87E28;
+}
+
+
+svg {
+	height:1em;
+	fill:white;
+}
+
+header #mainHead {
+	padding-top: 3em;
+}
+
+header .motto {
+	display:none;
+}
+
+.heading {
+	font-family: 'Raleway', "Helvetica Neue", Helvetica, sans-serif;
+}
+
+.scndLvlHead{
+	color:#BC6026;
+	fill:#BC6026;
+}
+
+.menu li {
+	list-style-type: none;
+	font-style: bold;
+}
+
+.menu p {
+	font-style:italic;
+	padding-left: 1em;
+}
+
+#cafe svg {
+	display:block;
+	margin:auto;
+}
+
+#cafe a img {
+	display:block;
+	margin: auto;
+	border-radius: 5px;
+}
+
+
+.story img {
+	max-height: 300px;
+	border-radius: 5px;
+	float: right;
+	padding-left: 1em;
+}
+
+@media screen and (min-width:768px) {
+	.navbar-fixed-top{
+		background-color: rgba(24, 28, 34, 0.8);
+	}
+
+	.navbar-fixed-top ul a{
+		padding-left: 1em;
+		padding-right: 1em;
+		color:white;
+	}
+
+	header {
+		background-image: url("../img/background-sm.jpg");
+		background-size:cover;
+		background-repeat:no-repeat;
+		min-height: 550px;
+	}
+
+	header #mainHead {
+			text-align:right;
+			color:white;
+	}
+
+	header .motto {
+		display:initial;
+		float:right;
+		color:white;
+	}
+
+	.headline p {
+		text-align: center;
+		font-size: 1.25em;
+		padding-top: 2em;
+		padding-bottom: 3em;
+
+	}
+
+	.headline svg {
+		display:initial;
+		height:1.5em;
+		padding-bottom: 1em;
+	}
+
+	.story {
+		max-height: 400px;
+	}
+
+	.story img {
+		max-height: 400px;
+	}
+
+	footer .container {
+		clear:both;
+	}
+	
+	.scndLvlHead {
+		height:1em;
+	}
+}
+
+@media screen and (min-width: 992px) {
+	header {
+		background-image: url("../img/background-md.jpg");
+		background-size:cover;
+		background-repeat: no-repeat;
+		min-height: 550px;
+	}
+
+	header #mainHead {
+		font-size: 4em;
+	}
+}
+
+@media screen and (min-width: 1200px){
+	header {
+		background-image: url("../img/background-lg.jpg");
+		background-size: cover;
+		background-repeat: no-repeat;
+		min-height: 550px;
+	}
+}
+
+.headline svg {
+	display:none;
+}
+
+.headline p {
+	font-style: italic;
+}
+
+.story {
+	background-color: #dbdce3;
+}
+
+footer {
+	border-top-style: solid;
+	border-top-width: 3px;
+	border-top-color: #D87E28;
+	background-color: #afb3c2;
+	font-size: 12px;
+	padding-top: 1em;
+	clear:both;
+}
